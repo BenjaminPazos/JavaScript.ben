@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Guerreiro</h1>
+    <p>Olá Benjamin, o <span id="classes">???</span> <span id="adjetivos">???</span> de <span id="reinos">???</span></p>
+
+    <script>
+        let classes = ["Paladino", "Mago", "Feiticeiro", "Espadachim", "Ubariano"]
+        let adjetivos = ["Valente", "Implacável", "Honrado", "Glorioso"]
+        let reinos = ["Gondor", "Valhalla", "Rivendell", "Minas Tirith", "Erebor"]
+
+        let classe = document.querySelector("body p #classes")
+        classe.innerText = classes[Math.floor(Math.random() * 5)] 
+
+        let adjetivo = document.querySelector("body p #adjetivos")
+        adjetivo.innerText = adjetivos[Math.floor(Math.random() * 4)] 
+
+        let reino = document.querySelector("body p #reinos")
+        reino.innerText = reinos[Math.floor(Math.random() * 5)] 
+    </script>
+</body>
+
+</html>
