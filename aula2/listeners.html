@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeners</title>
+</head>
+
+<body>
+    <img src="https://www.nicepng.com/png/full/42-424408_gravity-falls-waddles-png.png" height="800px">
+
+    <p></p>
+
+    <script>
+        let paragrafo = document.querySelector('p')
+
+        let imagem = document.querySelector('img')
+
+        imagem.onclick = clicou
+        imagem.onmouseenter = mouseou
+        function clicou() {
+            paragrafo.textContent = "Para de me cutucar... Oinc!"
+        }
+        function mouseou() {
+            paragrafo.textContent = "Para de me mousear... Oinc!"
+        }
+        function moveou() {
+            paragrafo.textContent = "Está fazendo cocegas... Oinc!"
+        }
+        function downou() {
+            paragrafo.textContent = "Está indo pra baixo... Oinc!"
+        }
+        function upou() {
+            paragrafo.textContent = "Está indo pra cima... Oinc!"
+        }
+        function leavear() {
+            paragrafo.textContent = "Já saiu?... Oinc!"
+        }
+
+    </script>
+</body>
+
+</html>

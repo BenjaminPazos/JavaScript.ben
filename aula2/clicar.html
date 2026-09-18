@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicar</title>
+
+</head>
+
+<body>
+    <h1 class="frase">Benjamin</h1>
+    <button class="botao">Botão</button>
+
+    <script>
+        let frase = document.querySelector('.frase')
+        let botao = document.querySelector('.botao')
+        let estadoFrase = 1
+
+        botao.onclick = function () {
+            if (estadoFrase == 1) {
+
+                frase.style.color = "#1D46F3"
+                frase.style.fontSize = "90px"
+                frase.textContent = "O impossível só existe até você decidir tentar"
+                estadoFrase = 2
+            } else {
+                frase.style.color = "#000000"
+                frase.style.fontSize = "40px"
+                frase.textContent = "Um texto qualquer"
+                estadoFrase = 1
+            }
+        }
+    </script>
+</body>
+
+</html>
